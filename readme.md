@@ -9,6 +9,7 @@ npm install husky --save-dev
 
 2/Création d’un hook de test avec la commande init :
 npx husky init
+changemement: création d'un dossier .husky contenant le fichier precommit
 
 3/
 
@@ -26,7 +27,9 @@ III/Changeset : Journal des changements
 
 5/
 
-6/7/
+6/
+
+7/
 
 
 
