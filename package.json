@@ -1,18 +1,23 @@
 {
   "name": "2425-r6.06-maintenance-applicative-tp1-sangare",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Un TP fait par : Votre SANGARE Mamourou",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@changesets/cli": "^2.27.12",
-    "husky": "^9.1.7"
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "typescript-eslint": "^8.24.0"
   },
   "dependencies": {
     "ansi-colors": "^4.1.3",

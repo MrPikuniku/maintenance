@@ -1,6 +1,6 @@
 # TP1 - Automatisations
 
-Un TP fait par : Votre SANGARE Mamourou
+Un TP fait par : SANGARE Mamourou
 
 II/ Husky: Gérer des Git Hook
 
@@ -11,36 +11,61 @@ npm install husky --save-dev
 npx husky init
 changemement: création d'un dossier .husky contenant le fichier precommit
 
+3/ Tenter de faire un commit et indiquer ce que vous constatez.
+
+4/Nous allons à présent éditer le fichier .husky/pre-commit , remplacer son contenu par:
+echo "Je m'exécute avant un commit"
+
+III/Changeset : Journal des changements
+
+1/Installer Changesets en tant que dépendance de développement: npm install --save-dev @changesets/cli
+
+2/Initialiser Changesets dans votre projet : npx changeset init
+changements: création du répertoire changesets
+
 3/Nous allons produire un changement. Pour cela, créer un fichier coucou.js
 
 4/Créer un changeset pour ce changement : npx changeset add
 changement: ajout du dossier .changeset
 
-5/   Générer le changelog automatiquement :             
+5/ Générer le changelog automatiquement : npx changeset version  
 changement: création du fichier CHANGELOG.md
 
+6/La commande suivante permet de vérifier la présence de changesets sur la branche master de notre projet: npx changeset status --since=master
 
-6/La commande suivante permet de vérifier la présence de changesets sur la branche master de notre projet  
+7/Automatiser la vérification de la présence de changesets avant chaque commit: mettre la commande `npx changeset status` dans le dossier .husky/pre-commit
 
-7/
+IV/ Prettier: La mise en forme
 
-III/Changeset : Journal des changements
+1/Editer le fichier coucou.js pour qu’il ressemble à ça (n’oublié pas de remplacer par votre nom la partie en orange) : fichier coucou.js
 
-1/
+2/Créer un fichier .prettierrc.json pour configurer Prettier. Ajoutez-y les règles suivantes :
 
-2/
+"printWidth": 80 → Limite la largeur des lignes à 80 caractères.
+"tabWidth": 2 → Définit la largeur d’une tabulation à 2 espaces.
+"useTabs": false → Utilise des espaces au lieu des tabulations.
+"semi": true → Ajoute des points-virgules à la fin des lignes.
+"singleQuote": true → Utilise des guillemets simples au lieu des doubles.
+"trailingComma": "all" → Ajoute une virgule à la fin des objets et des tableaux pour éviter des erreurs lors des modifications.
+"bracketSpacing": true → Ajoute un espace entre { et les propriétés d’un objet ({ key: value }).
+"arrowParens": "always" → Ajoute toujours des parenthèses autour des paramètres des fonctions fléchées ((x) => {}).
+"endOfLine": "crlf" → Utilise les fins de ligne CRLF (Windows).
 
-3/
+3/Pour pouvoir exécuter Prettier dans notre projet, il faut rajouter la ligne suivante dans la partie scripts de notre fichier package.json : "format": "prettier --write ."
 
-4/
+4/Exécuter Prettier pour formater le code: npm run format
+changement: Prettier a analysé tous les fichiers du projet et appliqué les règles définies dans .prettierrc.json. 
+
 
 5/
 
-6/
+V/ ESLint : La cohérence
 
-7/
+1/ Installer ESLint comme dépendance de développement :
+npm install --save-dev eslint
 
+2/Initialiser ESLint avec la commande :
+npm init @eslint/config@latest
 
-
-
+3/Tester le bon fonctionnement d’ESLint avec la commande: npx eslint --version 
 

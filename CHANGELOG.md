@@ -1,5 +1,11 @@
 # 2425-r6.06-maintenance-applicative-tp1-sangare
 
+## 1.0.4
+
+### Patch Changes
+
+- 47f6197: Suite
+
 ## 1.0.3
 
 ### Patch Changes

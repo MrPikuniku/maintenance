@@ -1,1 +1,2 @@
+npx changeset status
 npm test
