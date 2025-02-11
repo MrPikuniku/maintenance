@@ -11,9 +11,18 @@ npm install husky --save-dev
 npx husky init
 changemement: création d'un dossier .husky contenant le fichier precommit
 
-3/
+3/Nous allons produire un changement. Pour cela, créer un fichier coucou.js
 
-4/
+4/Créer un changeset pour ce changement : npx changeset add
+changement: ajout du dossier .changeset
+
+5/   Générer le changelog automatiquement :             
+changement: création du fichier CHANGELOG.md
+
+
+6/La commande suivante permet de vérifier la présence de changesets sur la branche master de notre projet  
+
+7/
 
 III/Changeset : Journal des changements
 
