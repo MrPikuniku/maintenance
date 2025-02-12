@@ -10,6 +10,7 @@ export default [
   {rules:{
     "no-alert": "error",
     "no-ternary" : "warn",
+    "no-console" : "warn"
   } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,

@@ -2,6 +2,9 @@
 
 Un TP fait par : SANGARE Mamourou
 
+Lien pour les Consignes: 
+https://fredericbernard.notion.site/TP1-Automatisations-19630dd220a0807d8c63ea036d57efab        
+
 II/ Husky: Gérer des Git Hook
 
 1/Installer Husky en tant que dépendance de développement :
