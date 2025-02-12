@@ -57,7 +57,9 @@ IV/ Prettier: La mise en forme
 changement: Prettier a analysé tous les fichiers du projet et appliqué les règles définies dans .prettierrc.json. 
 
 
-5/
+5/Automatiser l’exécution de Prettier avant chaque commit:
+mettre la commande npm run format dans le fichier pre-commit  
+
 
 V/ ESLint : La cohérence
 
@@ -68,4 +70,34 @@ npm install --save-dev eslint
 npm init @eslint/config@latest
 
 3/Tester le bon fonctionnement d’ESLint avec la commande: npx eslint --version 
+
+4/Analyser le code avec ESLint avec la commande :    npx eslint 
+résultat: pas de changement observé
+
+5/Ajouter la ligne suivante au fichier coucou.js et relancer l'analyse: const jeSersARien = 42;
+résultat: message d'erreur ('jeSersARien' is assigned a value but never used  @typescript-eslint/no-unused-vars
+✖ 1 problem (1 error, 0 warnings))
+
+
+6/Modifiez votre package.json pour y ajouter un script nommé lint qui exécutera la commande eslint
+
+
+7/Ajoutez la règle no-alert qui devra déclenchera une erreur pour chaque appel de la fonction alert() puisque cette fonction n’est pas disponible dans un contexte serveur comme le nôtre. Tester le bon fonctionnement de votre règle en ajoutant une alert dans votre fichier coucou.js.
+
+
+VI/
+
+1/
+
+
+2/
+
+3/
+
+4/
+
+5/
+
+
+
 
