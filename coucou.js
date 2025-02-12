@@ -15,3 +15,4 @@ function coucouQuote() {
   console.log('Coucou, je préfère les quotes simples !');
 }
 coucouQuote();
+alert("Alerte peu autorisée sur le serveur "); 

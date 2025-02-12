@@ -85,6 +85,14 @@ résultat: message d'erreur ('jeSersARien' is assigned a value but never used  @
 7/Ajoutez la règle no-alert qui devra déclenchera une erreur pour chaque appel de la fonction alert() puisque cette fonction n’est pas disponible dans un contexte serveur comme le nôtre. Tester le bon fonctionnement de votre règle en ajoutant une alert dans votre fichier coucou.js.
 
 
+8/ Ajoutez la règle no-ternary. Elle devra déclencher un avertissement pour chaque utilisation d’un opérateur ternaire. Tester le bon fonctionnement de votre règle en ajoutant un ternaire dans votre fichier coucou.js.
+
+
+
+
+
+
+
 VI/
 
 1/
