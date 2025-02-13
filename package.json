@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
     "format": "prettier --write .",
-    "lint": "eslint",
-    "buidl": "tsc"
+    "lint": "eslint .",
+    "build": "npx cross-env NODE_ENV=production npm run lint && tsc",
+    "knip": "knip"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "eslint": "^9.20.1",
     "globals": "^15.15.0",
     "husky": "^9.1.7",
+    "knip": "^5.44.1",
     "typescript-eslint": "^8.24.0"
   },
   "dependencies": {

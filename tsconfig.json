@@ -4,9 +4,12 @@
       "module": "commonjs",
       "strict": true,
       "esModuleInterop": true,
-      "outDir": "./dist"
+      "outDir": "./dist",
+      "moduleResolution": "node",
+      "types": ["knip"]
+
     },
-    "include": ["*.ts"]
+    "include": ["src/**/*.ts"]
 }
   
 

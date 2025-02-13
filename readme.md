@@ -90,20 +90,19 @@ résultat: message d'erreur ('jeSersARien' is assigned a value but never used  @
 
 8/ Ajoutez la règle no-ternary. Elle devra déclencher un avertissement pour chaque utilisation d’un opérateur ternaire. Tester le bon fonctionnement de votre règle en ajoutant un ternaire dans votre fichier coucou.js.
 
+9/Ajoutez la règle no-console qui devra déclencher un avertissement pour chaque console.log(). Vous devrez cependant ignorer cette règle pour la ligne qui affiche
+
+10/  Créez une règle qui ne sera effective que durant la phase de build du projet
 
 
 
+VI/ Knip : L’analyseur
 
+1/Installer Knip comme dépendance de développement 
 
+2/Créez un fichier de configuration knip.config.js à la racine du projet contenant
 
-VI/
-
-1/
-
-
-2/
-
-3/
+3/Pour pouvoir exécuter plus facilement Knip dans notre projet, vous pouvez rajouter la ligne suivante dans la partie scripts de notre fichier package.json 
 
 4/
 
