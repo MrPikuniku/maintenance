@@ -94,6 +94,8 @@ résultat: message d'erreur ('jeSersARien' is assigned a value but never used  @
 
 10/  Créez une règle qui ne sera effective que durant la phase de build du projet
 
+11/ Automatiser l’exécution de ESLint avant chaque commit
+
 
 
 VI/ Knip : L’analyseur
@@ -104,10 +106,10 @@ VI/ Knip : L’analyseur
 
 3/Pour pouvoir exécuter plus facilement Knip dans notre projet, vous pouvez rajouter la ligne suivante dans la partie scripts de notre fichier package.json 
 
-4/
+4/Nous allons créer nos fichiers de test. Ajouter les 3 fichiers suivants dans un nouveau dossier nommé src
 
-5/
+5/Exécuter Knip à l’aide de la commande: 
+Résultat: affiche la liste des fichiers, dépendances et packages non utilisées     
 
-
-
+6/
 
